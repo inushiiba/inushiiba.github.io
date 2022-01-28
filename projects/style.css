@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Rubik;
+    src: url(/fonts/Rubik-VariableFont_wght.ttf);
+  }
+
+@font-face{
+    font-family: Nunito;
+    src: url(/fonts/Nunito-VariableFont_wght.ttf)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Rubik, sans-serif;
+    color: #3C3027;
+    font-size:1em;
+}
+
+p{
+    line-height:1.5em;
+}
+
+h1{
+    font-size: 3em;
+    padding-bottom:0.25em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/* -------------- navbar -------------- */
+
+nav{
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF6EB;
+    position: sticky;
+    z-index:4;
+}
+
+.navlogo{
+    float:left;
+    padding: 0 65px;
+    margin-top:15px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+
+}
+
+.hover-rotate {
+    overflow: visible;
+    width: 100%;
+  }
+  
+  .hover-rotate img {
+    transition: all 0.2s;
+    max-width: 100%;
+  }
+  
+  .hover-rotate:hover img {
+    transform: scale(1.1) rotate(2deg);
+  }
+
+
+nav ul li a{
+    color: #3C3027;
+    font-size: 1.5em;
+    padding: 15px;
+    transition: 0.15s;
+}
+
+.navli1:hover{
+    color:#E44D3A;
+    transition: 0.2s;
+}
+
+.navli2:hover{
+    color:#F6BB43;
+    transition: 0.2s;
+}
+
+.navli3:hover{
+    color:#A3BC31;
+    transition: 0.2s;
+}
+
+.navli4:hover{
+    color:#63B0F3;
+    transition: 0.2s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #3C3027;
+    float: right;
+    line-height: 70px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:1000px){
+
+    nav ul li a{
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width:880px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#FFF6EB;
+        top:70px;
+        left: -100%;
+        text-align:center;
+        transition: all .5s;
+        border-top: #f8e8d5 2px solid;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size:1.75em;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* -------------- project pages -------------- */
+
+.projtxt{
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.projtxt .projimg1 img{
+    display:block;
+    float:right;
+    height:500px;
+    margin-left:8%;
+    margin-bottom:8%;
+    max-width: 100%;
+    height: auto;
+}
+
+.projtxt h1{
+    padding-bottom:0.25em;
+}
+
+.projtxt h2{
+    padding-bottom:0.5em;
+}
+
+.projtxt .projsubtitle{
+    padding-bottom:3em;
+    color:#6D645D;
+}
+
+.projbody .projimg2{
+    margin-top:2em;
+    margin-bottom:2em;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.projbody .ytembed{
+    padding-bottom: calc(var(--aspect-ratio, .5625) * 100%); 
+    position: relative;
+    height: 0;
+}
+
+.ytembed iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projbody .projimg2 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.projbody .projimg2 p{
+    color:#6D645D;
+    padding-top:0.5em;
+    text-align: center;
+}
+
+.projtext2{
+    background-color: #ECEBEA;
+}
+
+.projtext2 p{
+    padding-top:2em;
+    padding-bottom: 2em;
+    padding-left: 18%;
+    padding-right: 18%;
+    text-align: center;
+}
+
+/* -------------- image side by side -------------- */
+
+.imgrow img{
+    display: block;
+    height:auto;
+    max-width: 100%;
+    padding:0.5em;
+}
+
+.imgrow {
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .imgrow{
+        display: block;
+        width: 100%;
+    }
+}
+
+/* -------------- footer -------------- */
+
+footer{
+    float:inline-end;
+    border-top:#ECEBEA 0.5px solid;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10em;
+    padding-top: 10px;
+    padding-bottom:10px;
+    z-index: -1;
+}
+
+.footnote{
+    color:#6D645D;
+    line-height: 1.25em;
+}

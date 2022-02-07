@@ -121,7 +121,7 @@ nav ul li a{
     color: #3C3027;
     float: right;
     line-height: 70px;
-    margin-right: 50px;
+    margin-right: 20px;
     cursor: pointer;
     display: none;
 }
@@ -163,6 +163,11 @@ nav ul li a{
     #check:checked ~ ul{
         left: 0;
     }
+
+    .navlogo{
+        padding: 0 20px;
+    }
+
 }
 
 /* -------------- footer -------------- */
@@ -334,6 +339,31 @@ footer{
     padding-bottom: 2em;
     padding-left: 9%;
     padding-right: 9%;
+    display:flex;
+    justify-content: center;
+}
+
+.hprograms h2{
+    
+    margin-top:1em;
+}
+
+.hprogramsimg{
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    padding-left:9%;
+    padding-right:9%;
+}
+
+.hprogramsimg img{
+    display: block;
+    height:auto;
+    max-width: 100%;
+    padding:0.5em;
+    padding-left:1em;
+    padding-right:1em;
+    border-radius: 20px;
 }
 
 /* -------------- image gallery broski -------------- */

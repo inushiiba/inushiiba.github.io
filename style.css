@@ -20,6 +20,7 @@ body{
     font-family: Rubik, sans-serif;
     color: #3C3027;
     font-size:1em;
+    overflow-x: hidden;
 }
 
 p{
@@ -244,19 +245,39 @@ footer{
     transition: all 0.2s;
 }
 
+
+/* -------------- slider -------------- */
+#slider{
+    overflow: hidden;
+    width:100%;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    width: 20%;
+    float: left;
+    opacity: 0.7;
+}
+
+@keyframes slider {
+    0% {left: 0;}
+    20% {left: 0;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: -400%;}
+}
 /* -------------- main page -------------- */
-
-.hometop{
-    padding-top:5%;
-    padding-bottom:5%;
-    padding-left: 18%;
-    padding-right: 18%;
-}
-
-.homehi{
-    margin-top:20%;
-    margin-bottom:25%;
-}
 
 .hcolumn {
     float: left;

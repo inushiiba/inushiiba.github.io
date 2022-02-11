@@ -14,6 +14,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -21,6 +22,11 @@ body{
     color: #3C3027;
     font-size:1em;
     overflow-x: hidden;
+}
+
+img{
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 p{
@@ -42,6 +48,10 @@ h3{
 
 h4{
     font-size:0.95em;
+}
+
+h5{
+    font-size:5em;
 }
 
 /* -------------- navbar -------------- */
@@ -209,7 +219,7 @@ footer{
 
 }
 
-.buttoncontact{
+.button1{
     border: none;
     background-color: #E44D3A;
     transition: all 0.2s;
@@ -217,13 +227,16 @@ footer{
     text-align: center;
     font-size: 1em;
     cursor: pointer;
-    padding: 15px 32px;
     border-radius: 40px;
+    padding: 15px 32px;
+}
+
+.abouttxt .button1{
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.buttonresume{
+.button2{
     border: none;
     background-color: #F6BB43;
     transition: all 0.2s;
@@ -235,21 +248,40 @@ footer{
     border-radius: 40px;
 }
 
-.buttoncontact:hover{
+.button1:hover{
     background-color: #EC8477;
     transition: all 0.2s;
 }
 
-.buttonresume:hover{
+.button2:hover{
     background-color: #F9D07D;
     transition: all 0.2s;
 }
-
 
 /* -------------- slider -------------- */
 #slider{
     overflow: hidden;
     width:100%;
+    position: relative;
+    text-align: center;
+}
+
+.slidertxt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#3C3027;
+    line-height:4em;
+    z-index: 1;
+}
+
+.slidertxt p{
+    padding-top:1em;
+}
+
+.slidertxt .button1{
+    margin-top:1em;
 }
 
 #slider figure{
@@ -263,7 +295,27 @@ footer{
 #slider figure img{
     width: 20%;
     float: left;
-    opacity: 0.7;
+    opacity: 0.5;
+    filter: grayscale(50%);
+
+}
+
+
+.fa-arrow-circle-down{
+    font-size: 2em;
+    color: #3C3027;
+    height:100%;
+    width: 100%;
+}
+
+.arrow{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding-top:43%;
+    text-align: center;
+    
 }
 
 @keyframes slider {
@@ -390,6 +442,7 @@ footer{
     border-radius: 20px;
 }
 
+
 /* -------------- projects page -------------- */
 
 .projbody{
@@ -408,6 +461,11 @@ footer{
 .projbody img:hover{
     opacity: 0.5;
     
+}
+
+.projbody h1{
+    text-align: center;
+    padding-bottom: 0.5em;
 }
 
 .projbox img{

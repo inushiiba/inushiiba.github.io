@@ -210,6 +210,12 @@ footer{
     text-align: justify;
 }
 
+.abouttxt a{
+    color: #F6BB43;
+    text-decoration: 1px underline solid #F6BB43;
+    text-underline-offset:2px;
+}
+
 .hello{
     float:left;
     max-width: 100%;
